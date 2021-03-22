@@ -7,5 +7,8 @@ urlpatterns = [
     path('suggestion/', views.suggestion, name='suggestion'),
     path('todolistdetail/<int:id>', views.todolistdetail, name='todolistdetail'),
     path('suggestiondetail/<int:id>', views.suggestiondetail, name='suggestiondetail'),
-
+    path('newtodolist/', views.newtodolist, name='newtodolist'),
+    path('newsuggestion/', views.newsuggestion, name='newsuggestion'),
+    path('loginmessage/', views.loginmessage, name='loginmessage'),
+    path('logoutmessage/', views.logoutmessage, name='logoutmessage'),
 ]
