@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pythonclub.wsgi.application'
+WSGI_APPLICATION = 'todolist.wsgi.application'
 
 
 # Database
