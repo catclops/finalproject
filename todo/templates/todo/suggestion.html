@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Suggestions</h2>
+<table class="table">
+  <tr>
+      <th>Name</th>
+  </tr>
+  {% for s in suggestion_list %}
+    <tr>
+        <td><a href="{% url 'suggestion' id=s.id %}">{{ s.suggestwhat }}</a></td>
+    </tr>
+    {% endfor %}
+
+</table>
+{% endblock %}

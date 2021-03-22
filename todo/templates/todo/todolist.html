@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>To Do List</h2>
+<ul>
+    {% for t in todo_list %}
+        <li>{{ t.what }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
