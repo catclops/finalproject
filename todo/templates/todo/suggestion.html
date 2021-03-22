@@ -7,7 +7,7 @@
   </tr>
   {% for s in suggestion_list %}
     <tr>
-        <td><a href="{% url 'suggestion' id=s.id %}">{{ s.suggestwhat }}</a></td>
+        <td><a href="{% url 'suggestiondetail' id=s.id %}">{{ s.suggestwhat }}</a></td>
     </tr>
     {% endfor %}
 
