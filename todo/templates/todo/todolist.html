@@ -2,9 +2,7 @@
 {% block content %}
 <h2>To Do List</h2>
 <table class="table">
-  <tr>
-      <th>Name</th>
-  </tr>
+
   {% for t in todo_list %}
     <tr>
         <td><a href="{% url 'todolistdetail' id=t.id %}">{{ t.what }}</a></td>

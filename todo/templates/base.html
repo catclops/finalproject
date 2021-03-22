@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
- <html> 
 <head> 
 <title>Final Project</title> 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> 
 <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'> 
+<link rel="stylesheet" type="text/css" href="{% static 'todo/todo.css'%}">
 </head> 
 <body> 
 <div class='jumbotron'> 
@@ -13,7 +14,7 @@
    <nav class="navbar navbar-default"> 
    <div class="container-fluid">
 <div class="navbar-header"> 
-<a class="navbar-brand" href="{% url 'index' %}">Final Project</a> 
+<a class="navbar-brand" href="{% url 'index' %}">Home</a> 
 </div> 
 <ul class="nav navbar-nav"> 
 <li><a href="{% url 'todolist' %}">To Do List</a> </li>
